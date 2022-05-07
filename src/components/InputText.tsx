@@ -7,6 +7,10 @@ export const InputText = () => {
     setText(event.target.value);
     console.log(text);
   };
+
+  const handleTextTrim = (text: string) => {
+    setText(text.trim());
+  };
   return (
     <>
       <form action=''>
@@ -15,9 +19,11 @@ export const InputText = () => {
           type='text'
           placeholder='ここに正しいテキストを入力してください'
           onChange={handleChange}
+          value={text}
         />
         <span>{`文字数:${text.length}`}</span>
       </form>
+      <button onClick={() => handleTextTrim(text)}>スペースを削除する</button>
     </>
   );
 };
