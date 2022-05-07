@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { InputText } from './components/InputText';
 
 function App() {
   return (
     <>
-      <p>仮</p>
+      <InputText />
     </>
   );
 }
