@@ -15,6 +15,8 @@ export const InputText = () => {
     <>
       <form action=''>
         <label htmlFor=''>正しいテキストを入力</label>
+        {text.includes(' ') && <p>半角スペースが含まれています</p>}
+        {text.includes('　') && <p>全角スペースが含まれています</p>}
         <input
           type='text'
           placeholder='ここに正しいテキストを入力してください'
