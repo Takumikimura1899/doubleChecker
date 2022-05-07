@@ -40,3 +40,12 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.inputArea {
+  display: flex;
+}
+
+.inputArea-form {
+  display: flex;
+  align-items: center;
+}
